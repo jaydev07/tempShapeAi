@@ -1,0 +1,125 @@
+.heading-div{
+    padding:4% 3%;
+    background-image: linear-gradient(to right, rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgba(255,0,0,0),rgb(24, 231, 238), rgb(118, 207, 96));
+    border-bottom: 0.15rem solid #f9f9ff;
+}
+
+.heading{
+    font-size:2em;
+}
+
+.weeks-div{
+    background-color:#F7FAFC;
+    padding:1%
+}
+
+.day{
+    background-color: white;
+    border-radius: 8px;
+    margin:1%;
+    padding:1%;
+    padding-left:2%;
+}
+
+.day-number{
+    background-color:#deedf7;
+    border-radius:8px;
+    margin-top:2%;
+    height: 30%;
+    text-align: center;
+    padding:0.4%;
+}
+
+
+.cards{
+    border-left:0.1rem solid #888888;
+    box-shadow: 2px 2px 2px #888888;
+    text-align:left;
+    border-radius: 8px;
+    flex: 1;
+    margin: 2%;
+    border-radius: 7px;
+}
+
+.completed{
+    border-top:0.5rem solid green;
+}
+
+.live{
+    border-top:0.5rem solid red;
+}
+
+.upcoming{
+    border-top:0.5rem solid purple;
+}
+
+.day-row{
+    margin-left: 2%;
+    display:flex;
+}
+
+.down-res{
+    float:right;
+}
+
+.week-symbole-section{
+    text-align: center;
+    padding:3%;
+    border-bottom: 0.15rem solid #eaeafa;
+}
+
+.week-symbole{
+    position: relative;
+    display:inline-block;
+}
+
+.icons{
+    font-size: 2rem;
+    border-radius:100%;
+}
+
+.tick{
+    background-color:white;
+    color:green;
+}
+
+.current{
+    background-color:white;
+    color:blue;
+}
+
+.upcoming-symbole{
+    background-color:white;
+    color:grey;
+}
+
+.line{
+    position: relative;
+    display: inline-block;
+    font-size:2rem;
+    width:2.5rem;
+    height:0.1rem;
+    color:gray;
+    background-color:gray;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+.week-text{
+    position: relative;
+    display: inline-block;
+}
+
+.trophy-icon{
+    font-size: 4rem;
+    color:gold
+}
+
+.cards h6{
+    font-size:1.2rem;
+}
+
+.active-img{
+    /* position:absolute;
+    top:1%; */
+}

@@ -1,0 +1,19 @@
+/node_modules
+node_modules
+lerna-debug.log
+package-lock.json
+.idea/
+workspace.xml
+yarn-error.log
+yarn.lock
+out
+.DS_Store
+.serverless
+.serverless_nextjs
+.env
+.dev
+.appfairy
+# managed by open-wa
+**.data.json
+**.node-persist**
+# end managed by open-wa

@@ -1,0 +1,58 @@
+.ionContent-container{
+    background-color: #E5E5E5;
+    height:100%;
+    padding-top:3%;
+}
+
+.auth-container{
+    background-color: white;
+    border-radius:8px;
+    margin:auto;
+    padding:1%;
+    width:33.33%;
+    height:95%;
+}
+
+.input-element{
+    background-color:#F8F8F8;
+    padding:3% 5%;
+    margin: 3% auto;
+    border-radius: 8px;
+}
+
+.label-element{
+    text-align:left;
+    color:#7C90AF;
+}
+
+.input-tag{
+    border-bottom: 2px solid #25467A;
+    color:#25467A;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+
+.login-heading-div{
+    text-align:center;
+}
+
+.login-sub-heading-div{
+    text-align:center;
+    color: #7C90AF;
+    font-size:1.2rem;
+    margin-bottom:10%;
+}
+
+.switch-div{
+    text-align:center;
+    margin-top: 2%;
+    color:#7C90AF;
+    font-size:1.1rem;
+    margin-top: 4%;
+}
+
+.switch-link{
+    text-decoration: none;
+    color:#0057E0;
+    font-weight: 700;
+}

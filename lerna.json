@@ -1,0 +1,18 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "version": "1.2.0",
+  "command": {
+    "version": {
+      "message": "chore: version",
+      "ignoreChanges": [
+        "*.env",
+        "node_modules",
+        "*.idea/",
+        "packages/**/node_modules/"
+      ]
+    }
+  }
+}

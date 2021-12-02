@@ -1,0 +1,50 @@
+---
+swagger: "2.0"
+info:
+  version: "1.0.0"
+  title: "Referral and Order API"
+#  description: "A sample API that uses a petstore as an example to demonstrate features in the swagger-2.0 specification"
+  contact:
+    name: "Swagger API Team"
+host: "localhost:4000"
+basePath: "/v1"
+schemes:
+  - "http"
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+paths:
+  /orders/{id}:
+    post:
+      parameters:
+        - name: id
+          in: path
+          schema:
+            type: string
+          required: true
+          description: Id of the product to be placed order
+      description: "Creates and returns an order with ordered products and razorpay order id"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Created order"
+          schema:
+            type: object
+            $ref: "#/definitions/Order"
+definitions:
+  Order:
+    type: "object"
+    required:
+      - "products"
+      - "_id"
+      - "razorpayOrderId"
+    properties:
+      _id:
+        type: "string"
+        format: "hex"
+      products:
+        type: "array"
+        items:
+          type: "string"

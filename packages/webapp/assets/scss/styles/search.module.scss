@@ -1,0 +1,30 @@
+// Bootstrap functions
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+// Argon functions
+@import "../custom/functions";
+@import "../custom/variables";
+@import "~bootstrap/scss/variables";
+
+// Argon mixins
+@import "../custom/mixins";
+
+.search__results__card__image {
+  width: 300px;
+  height: 200px;
+}
+
+.course-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4 !important;
+  overflow: hidden;
+}
+
+@include media-breakpoint-up(lg) {
+  .search__results__card__image {
+    width: 300px;
+    height: 300px;
+  }
+}

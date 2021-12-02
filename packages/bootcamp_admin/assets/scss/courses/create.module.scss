@@ -1,0 +1,32 @@
+.mark-down {
+  overflow: hidden;
+}
+p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+img {
+  display: block;
+  border-style: solid;
+  width: 100% !important;
+  border-radius: 0.5rem;
+}
+
+.btn-file-custom {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file-custom input[type="file"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  cursor: inherit;
+  display: block;
+}

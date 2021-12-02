@@ -1,0 +1,83 @@
+.stream-name{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+    margin:1%;
+}
+
+.description{
+    margin:2% 1%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3em;
+    line-height: 125%;
+}
+
+.date{
+    margin:1%;
+    margin-top: 5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 125%;
+}
+
+.btn{
+    margin-top:5%;
+    margin-bottom:10%;
+}
+
+.content{
+    margin-left:1%;
+}
+
+.new-stream-heading{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 125%;
+    display: inline-block;
+    color:#2D3748;
+    margin-top:0.5em;
+    margin-left:3%;
+    /* margin-:0.5em; */
+}
+
+.popup{
+    padding: 1%;
+    padding-top: 0.1%;
+    padding-left:2%;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.30);
+    background: #fff;
+    padding-bottom: 2%;
+}
+
+.input-box{
+    background-color:#EDF2F7;
+    border-radius: 4px;
+    margin-top: 1%;
+    padding-left:1%;
+}
+
+.option-item{
+    margin:3%;
+}
+
+.my-btn{
+    float:right;
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+
+.question-item{
+    margin:3%;
+    margin-bottom: 5%;
+}
+
+.delete-btn{
+    float:left;
+    margin-left: 3%;
+    margin-bottom: 5%;
+}

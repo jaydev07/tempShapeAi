@@ -1,0 +1,90 @@
+// Bootstrap functions
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+// Argon functions
+@import "../custom/functions";
+@import "../custom/variables";
+@import "~bootstrap/scss/variables";
+
+// Argon mixins
+@import "../custom/mixins";
+
+@mixin label-active() {
+  font-size: 0.75rem;
+  transform: translateY(-14px);
+}
+
+.auth-bg {
+  background: -webkit-linear-gradient(
+    to right,
+    #070c3d,
+    #831035
+  ) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #070c3d,
+    #831035
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.img-logo {
+  filter: brightness(0) invert(1);
+}
+
+.try_for_free {
+  cursor: pointer;
+  &:hover {
+    color: $gray-500 !important;
+  }
+}
+
+.auth__forms {
+  padding-top: 1rem;
+  & > .form-group > div > input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  & > form > .row > .col > div > .form-group > div > input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    outline: none;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(29, 28, 31, 0.5) !important;
+    border: 1px solid transparent !important;
+    color: #fff !important;
+    font-family: inherit;
+    padding: 6px !important;
+    text-indent: 6px;
+
+    &:focus {
+      background-color: #091222 !important;
+    }
+  }
+
+  & > button {
+    margin: 0.5rem 0;
+  }
+}
+.account__exist {
+  cursor: pointer;
+  &:hover {
+    color: $gray-500 !important;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .img-logo {
+    width: 80%;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .auth__container {
+    padding-top: 8rem !important;
+    margin: 0 4rem;
+  }
+  .img-logo {
+    width: 50%;
+  }
+}

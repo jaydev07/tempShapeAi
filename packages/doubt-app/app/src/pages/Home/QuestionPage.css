@@ -1,0 +1,81 @@
+.root-p-tag{
+    font-size: 0.9rem;
+    color:#718096;
+}
+
+.ques-container{
+    background-color: #e8f1f7;
+    height:100%;
+    padding:4% 3%;
+}
+
+.statement-container{
+    padding:2%;
+    background: #FFFFFF;
+    /* Gray:400 */
+
+    border: 2px solid #CBD5E0;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.completed-btn{
+    float: right;
+    margin:1%;
+    padding:1.5%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1.5px solid #0057E0;
+    background-color: #e8f1f7;
+    color:#0057E0;
+    border-radius: 8px;
+}
+
+.attempt-btn{
+    float: right;
+    margin:1%;
+    margin-right: 0;
+    padding:1.5%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1.5px solid #0057E0;
+    background-color: #0057E0;
+    color:white;
+    border-radius: 8px;
+}
+
+.problem-line{
+    width:98%;
+    height:1px;
+    color:#c7e3f5;
+}
+
+.problem{
+    color:#2C5282;
+    font-size: 1.1rem;
+    margin-right: 2%;
+    background-color:#e8f1f7;
+}
+
+.solution{
+    color:#A0AEC0;
+    font-size: 1.1rem;
+    margin-left: 2%;
+    background-color:#e8f1f7;
+}
+
+.lock-icon{
+    display: inline-block;
+}
+
+.solution-container{
+    display: none;
+}
+
+.hide-it{
+    display:none;
+}
+
+.show-it{
+    display: block;
+}

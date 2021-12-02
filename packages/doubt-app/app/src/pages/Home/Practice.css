@@ -1,0 +1,59 @@
+.practice-container{
+    background-color:#e8f1f7;
+    padding:3%;
+}
+
+.practice-heading{
+    font-size:1.5rem;
+    font-weight:bold;
+    color:#2D3748;
+}
+
+.video-set-container{
+    margin-bottom: 5%;
+}
+
+.set-card{
+    margin:1% 2%;
+    padding:3% 1%;
+    background: #F7FAFC;
+    box-shadow: 0px 4px 19px rgba(79, 78, 78, 0.26);
+    border-radius: 8px;
+}
+
+.card-description{
+    color:#718096;
+}
+
+.videos-length{
+    color:#718096;
+}
+
+.problems-length{
+    color:#718096;
+}
+
+.week-card-link{
+    text-decoration: none;
+    color:black;
+}
+
+.unlock-div{
+    text-align: center;
+    color:black;
+    padding:2%;
+    width:20%;
+    font-size: 1.5rem;
+    background-color:#2B6CB0;
+    border-radius:100%;
+}
+
+.lock-div{
+    text-align: center;
+    padding:2%;
+    width:20%;
+    font-size: 1.5rem;
+    color:#CBD5E0;
+    background-color:#A0AEC0;
+    border-radius:100%;
+}

@@ -1,0 +1,4 @@
+/node_modules
+/.next
+fakeData.js
+.env.local

@@ -1,0 +1,361 @@
+{
+  "sessions": [
+    {
+      "_id": "60fff03de398f4313661dd12",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "T1",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fbb907ea2637e0dcfb4872",
+        "name": "Day 5"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fecaf7ea2637e0dc19fb13",
+        "name": "T1",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-07-27T11:38:31.000Z",
+      "eventId": "88687527159",
+      "__v": 0
+    },
+    {
+      "_id": "610000e4ef5d9f34a2f5fa8b",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "T2",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fbb907ea2637e0dcfb4872",
+        "name": "Day 5"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fecafdea2637e0dc19fd9f",
+        "name": "T2",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-07-29T15:00:35.000Z",
+      "eventId": "86110436212",
+      "__v": 0
+    },
+    {
+      "_id": "610000fdef5d9f34a2f5fa8c",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "T4",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fbb907ea2637e0dcfb4872",
+        "name": "Day 5"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fff7b2ea2637e0dc96bb89",
+        "name": "T4",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-07-30T15:00:35.000Z",
+      "eventId": "86351785519",
+      "__v": 0
+    },
+    {
+      "_id": "61000119ef5d9f34a2f5fa8d",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D2 S1",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7b7ea2637e0dc96bdb7",
+        "name": "Day 2"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fff7eaea2637e0dc96d0d7",
+        "name": "D2 S1",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-01T15:00:35.000Z",
+      "eventId": "83344281580",
+      "__v": 0
+    },
+    {
+      "_id": "61000126ef5d9f34a2f5fa8e",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D2 S2",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7b7ea2637e0dc96bdb7",
+        "name": "Day 2"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fff7f2ea2637e0dc96d40c",
+        "name": "D2 S2",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-02T15:00:35.000Z",
+      "eventId": "89401278275",
+      "__v": 0
+    },
+    {
+      "_id": "61000159ef5d9f34a2f5fa8f",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D3 S4",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7bbea2637e0dc96be98",
+        "name": "Day 3"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fff809ea2637e0dc96dcaf",
+        "name": "D3 S4",
+        "type": "project"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-02T15:00:35.000Z",
+      "eventId": "82260411828",
+      "__v": 0
+    },
+    {
+      "_id": "61000164ef5d9f34a2f5fa90",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D3 s5",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7bbea2637e0dc96be98",
+        "name": "Day 3"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fff815ea2637e0dc96e16b",
+        "name": "D3 s5",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-03T15:00:35.000Z",
+      "eventId": "82405895897",
+      "__v": 0
+    },
+    {
+      "_id": "61000173ef5d9f34a2f5fa91",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "d4 s1",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7bdea2637e0dc96bfc4",
+        "name": "Day 4"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fff868ea2637e0dc970372",
+        "name": "d4 s1",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-04T15:00:35.000Z",
+      "eventId": "84763176111",
+      "__v": 0
+    },
+    {
+      "_id": "6100017bef5d9f34a2f5fa92",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "d4 s2",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7bdea2637e0dc96bfc4",
+        "name": "Day 4"
+      },
+      "week": {
+        "_id": "60fbad76ea2637e0dcf7530d",
+        "name": "Week 1"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "60fff86eea2637e0dc970594",
+        "name": "d4 s2",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-05T15:00:35.000Z",
+      "eventId": "87990796685",
+      "__v": 0
+    },
+    {
+      "_id": "61000192ef5d9f34a2f5fa93",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D2 s1",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7c9ea2637e0dc96c493",
+        "name": "Day 2"
+      },
+      "week": {
+        "_id": "60fbae75ea2637e0dcf7ab4e",
+        "name": "Week 2"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "61000075ea2637e0dc9a13b6",
+        "name": "D2 s1",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-08T15:00:35.000Z",
+      "eventId": "87003354182",
+      "__v": 0
+    },
+    {
+      "_id": "610001a0ef5d9f34a2f5fa94",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D2 p1",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7c9ea2637e0dc96c493",
+        "name": "Day 2"
+      },
+      "week": {
+        "_id": "60fbae75ea2637e0dcf7ab4e",
+        "name": "Week 2"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "6100007eea2637e0dc9a1816",
+        "name": "D2 p1",
+        "type": "project"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-09T15:00:35.000Z",
+      "eventId": "87616538227",
+      "__v": 0
+    },
+    {
+      "_id": "610001adef5d9f34a2f5fa95",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D2 s3",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7c9ea2637e0dc96c493",
+        "name": "Day 2"
+      },
+      "week": {
+        "_id": "60fbae75ea2637e0dcf7ab4e",
+        "name": "Week 2"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "61000086ea2637e0dc9a1af7",
+        "name": "D2 s3",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-10T15:00:35.000Z",
+      "eventId": "83652883009",
+      "__v": 0
+    },
+    {
+      "_id": "6100026aef5d9f34a2f5fa96",
+      "status": "scheduled",
+      "coHosts": [
+        
+      ],
+      "name": "D3 s1",
+      "bootcamp": "6097ed0b7c1bc7cda78dbe5f",
+      "day": {
+        "_id": "60fff7cdea2637e0dc96c5bf",
+        "name": "Day 3"
+      },
+      "week": {
+        "_id": "60fbae75ea2637e0dcf7ab4e",
+        "name": "Week 2"
+      },
+      "batch": "6097f0f97c1bc7cda78f733f",
+      "session": {
+        "_id": "6100008fea2637e0dc9a1e85",
+        "name": "D3 s1",
+        "type": "class"
+      },
+      "host": "dpzxmijMNtTReWhkRUUu2SVE4Sr1",
+      "startsAt": "2021-08-10T15:00:35.000Z",
+      "eventId": "84082534532",
+      "__v": 0
+    }
+  ],
+  "mentors": {
+    "dpzxmijMNtTReWhkRUUu2SVE4Sr1": "Dev",
+    "DEEEJNWNqlPGMdM2WGqYyiBilCy1": "Devakumar",
+    "qX9RIQcol6XTMUeAp8gp69NMPbr1": "DEVAAAAA",
+    "IG4Jk7otzrY6X0hFwlyjzpmaaBu1": "DEVAAAAA2"
+  }
+}

@@ -1,0 +1,51 @@
+/*.participants-count {*/
+/*    display: none !important;*/
+/*}*/
+
+.watermark {
+    display: none !important;
+}
+
+.alert-error .alert-wrapper {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    font-weight: bold;
+}
+
+.ion-select {
+    width: 100%;
+
+    justify-content: center;
+}
+.conversation-list {
+    background-color: #0C2C5F;
+}
+
+.conversation-item .cs-conversation__name {
+    color: white;
+}
+
+.conversation-item .cs-conversation__info {
+    color: #a0a0a0;
+}
+.cs-conversation-header {
+    padding: 0.9em 0.9em;
+    background-color: #0E2447;
+}
+
+
+
+.cs-conversation-header__content .cs-conversation-header__user-name {
+    background-color: #0E2447;
+    color: white;
+}
+.cs-message--outgoing .cs-message__content {
+    background-color: #0057E0;
+    color: #F8F8F8
+}
+
+ion-menu{
+    --side-max-width:30%;
+    /* --side-max-width:10%; */
+    /* --height: 100%; */
+}

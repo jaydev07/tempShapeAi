@@ -1,0 +1,68 @@
+.navbar-container{
+    background-color: #0E2447;
+    text-align: center;
+    /* width:50%; */
+    /* float:left; */
+    height: 100%;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-icons{
+    font-size:0.3rem;
+}
+
+.link-item{
+    border-radius: 8px;
+    margin-top:3%;
+    padding:0;
+}
+
+.my-icon{
+    font-size:1.2rem;
+    color: white;
+}
+
+.nav-title{
+    font-size: 0.7rem;
+    color:white;
+}
+
+/* .selected{
+    background-color: #3b547c;
+    padding-top:2%;
+} */
+
+.side-nav-container{
+    width:50%;
+}
+
+.main-logo{
+    margin-top:10%;
+    font-size:2rem;
+    color: white;
+}
+
+.help-link{
+    margin-top:75%;
+}
+
+.logout-btn{
+    background-color:#0E2447;
+    display:block;
+    margin:auto;
+    font-size:1.1rem;
+    text-align: center;
+}
+
+::placeholder{
+    color:white;
+}

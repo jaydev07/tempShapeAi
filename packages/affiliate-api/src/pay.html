@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <title>Pay</title>
+    <style>
+        .form-row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -5px;
+            margin-left: -5px
+        }
+
+        .form-row>.col,
+        .form-row>[class*=col-] {
+            padding-right: 5px;
+            padding-left: 5px
+        }
+        .form-row>.col>.valid-tooltip,
+        .form-row>[class*=col-]>.valid-tooltip {
+            left: 5px
+        }
+
+        .form-row>.col>.invalid-tooltip,
+        .form-row>[class*=col-]>.invalid-tooltip {
+            left: 5px
+        }
+
+        .col-md-8 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .col-md-3 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            flex: 1;
+        }
+
+        .col-md-9 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px
+        }
+
+        .col-md-3 {
+            -ms-flex: 0 0 25%;
+            flex: 1;
+            max-width: 25%
+        }
+
+        .col-md-9 {
+            -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+            max-width: 75%
+        }
+
+    </style>
+</head>
+<body>
+<button id="rzp-button1">Pay</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.js" integrity="sha512-CrNI25BFwyQ47q3MiZbfATg0ZoG6zuNh2ANn/WjyqvN4ShWfwPeoCOi9pjmX4DoNioMQ5gPcphKKF+oVz3UjRw==" crossorigin="anonymous"></script><script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.css" integrity="sha512-/D4S05MnQx/q7V0+15CCVZIeJcV+Z+ejL1ZgkAcXE1KZxTE4cYDvu+Fz+cQO9GopKrDzMNNgGK+dbuqza54jgw==" crossorigin="anonymous" />
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.js" integrity="sha512-CrNI25BFwyQ47q3MiZbfATg0ZoG6zuNh2ANn/WjyqvN4ShWfwPeoCOi9pjmX4DoNioMQ5gPcphKKF+oVz3UjRw==" crossorigin="anonymous"></script><script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.js" integrity="sha512-CrNI25BFwyQ47q3MiZbfATg0ZoG6zuNh2ANn/WjyqvN4ShWfwPeoCOi9pjmX4DoNioMQ5gPcphKKF+oVz3UjRw==" crossorigin="anonymous"></script><script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+    var host = window.location.host;
+    var env = host === "www.shapeai.tech" || host === "shapeai.tech" ? "prod" : "dev"
+    console.log("{{wf {&quot;path&quot;:&quot;payment-link&quot;,&quot;type&quot;:&quot;Link&quot;\} }}", env);
+    var url = new URL(window.location.href);
+    var ref = url.searchParams.get("ref");
+    let sec;
+    // config
+    var apiBaseUrlDev = localStorage.devUrl || 'https://68eaf855d705.ngrok.io' + '/v1';
+    var apiBaseUrlProd = 'https://6lf09wslfj.execute-api.ap-south-1.amazonaws.com' + '/v1';
+    var apiKey = env === 'prod' ? 'rzp_live_YNrgxRLb637pbY' : 'rzp_test_EvLaLslKfjgwpC';
+
+    var apiBaseUrl = env === 'prod' ? apiBaseUrlProd : apiBaseUrlDev
+
+    var prefillName;
+    var prefillNumber;
+    function verifyRefId(refId) {
+        fetch(apiBaseUrl + '/referrals/exists/' + refId)
+          .then(res => res.json())
+          .then(res => {
+              if (res.exists) {
+                  document.getElementById('product-price').innerHTML = '₹ 5,000.00 '
+                  // modify DOM to show the off in price
+              } else {
+                  Swal.fire('REF ID DOESNOT EXISTS');
+                  // modify DOM to inform the user that the ref is is not valid
+              }
+          })
+    }
+
+    if (ref) verifyRefId(ref);
+
+
+    function createOrder(productId){
+        Swal.fire({
+              title: 'Please complete the form',
+              html: `
+
+  <label>Full Name</label>
+    <input type="text" id="name" class="swal2-input" placeholder="Name">
+
+  <label>Gmail Id</label>
+  <input type="text" id="gmail" class="swal2-input" placeholder="you@gmail.com">
+
+  <label>Whatsapp Number (with country code)</label>
+  <div class="form-row">
+
+    <div class="form-group col-md-3">
+      <input type="text" class="swal2-input" id="country-code" value="+91" placeholder="+91">
+    </div>
+    <div class="form-group col-md-9">
+      <input type="text" maxlength="12" class="swal2-input" id="phone" placeholder="Number">
+    </div>
+
+  </div>
+    <label>Confirm Whatsapp Number</label>
+      <div class="form-row">
+
+    <div class="form-group col-md-3">
+      <input type="text" class="swal2-input" id="country-code-confirm" value="+91" placeholder="+91">
+    </div>
+    <div class="form-group col-md-9">
+      <input type="text" maxlength="12" class="swal2-input" id="phone-confirm" placeholder="Number">
+    </div>
+
+  </div>
+  `,
+              confirmButtonText: 'Continue',
+              focusConfirm: false,
+              preConfirm: () => {
+                  const numberOnlyRegex = new RegExp(/^\d+$/);
+                  const emailRegex = new RegExp(/^[\w.+\-]+@gmail\.com$/);
+                  const name = Swal.getPopup().querySelector('#name').value;
+                  const email = Swal.getPopup().querySelector('#gmail').value;
+
+                  const countryCode = Swal.getPopup().querySelector('#country-code').value;
+                  const countryCodeConfirm = Swal.getPopup().querySelector('#country-code-confirm').value;
+
+                  const phone = Swal.getPopup().querySelector('#phone').value;
+                  const phoneConfirm = Swal.getPopup().querySelector('#phone-confirm').value;
+
+
+                  if (!name || !email || !countryCode || !countryCodeConfirm || !phone || !phoneConfirm) {
+                      Swal.showValidationMessage(`Please make sure all fields are filled`);
+                  } else {
+                      if (!emailRegex.test(email)) Swal.showValidationMessage(`Please enter a valid Gmail address`);
+                      else if (!numberOnlyRegex.test(phone)) Swal.showValidationMessage(`Please enter a valid phone number`);
+                      else if (!numberOnlyRegex.test(phoneConfirm)) Swal.showValidationMessage(`Please enter a valid phone number`);
+                      else if (countryCode !== countryCodeConfirm) Swal.showValidationMessage('Please make sure the country code are matching')
+                      else if (phone !== phoneConfirm) Swal.showValidationMessage('Please make sure the phone numbers are matching');
+                      else {
+                          return {
+                              studentName: name,
+                              studentGmail: email,
+                              studentWhatsapp: countryCode + phone,
+                          }
+                      }
+                  }
+              }
+          })
+          .then((result) => {
+              fetch(apiBaseUrl + '/orders' + '/' + productId , {
+                  method: "POST",
+                  mode:'cors',
+                  headers: {
+                      'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({ refId: ref, notes: result.value })
+              })
+                .then(res => res.json())
+                .then(res => startOrderPayment(res.razorpayOrderId, res.amount, result.value));
+          })
+    }
+
+    function updateOrderStatus (paymentId, paymentSignature) {
+        fetch(apiBaseUrl + '/orders/update/status', {
+            method: 'POST',
+            mode:'cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                razorpayPaymentId: paymentId,
+                razorpaySignature: paymentSignature,
+            })
+        })
+          .then(res => {
+              if (!res.ok) throw res;
+              return res;
+          })
+          .then(res => res.json())
+          .then(res => {
+              if (res.status === 'completed')
+                  Swal.fire({
+                      title: 'Slot booked for the bootcamp successfully',
+                      html: 'Payment Id for reference: <b>' + res.razorpayPaymentId +'</b>',
+                      icon: 'success'
+                  });
+              else if (res.razorpayPaymentStatus === 'created')
+                  Swal.fire({
+                      title: 'Payment Attempted',
+                      text: 'Payment Id for reference: ' + res.razorpayPaymentId,
+                      icon: 'success'
+                  });
+          })
+          .catch( err => {
+              console.log({err})
+              err.text().then( errorMessage => {
+                  alert(errorMessage);
+                  Swal.fire({
+                      title: errorMessage,
+                      icon: 'info'
+                  })
+              })
+          })
+    }
+    function startOrderPayment (order_id, amount, prefill) {
+        var options = {
+            "key": apiKey,
+            "name":  "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}",
+            "description": "{{wf {&quot;path&quot;:&quot;description&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}",
+            "order_id": order_id,
+            "prefill": {
+                "name": prefill.studentName,
+                "email": prefill.studentGmail,
+                "contact": prefill.studentWhatsapp
+            },
+            "handler": function (response) {
+                updateOrderStatus(response.razorpay_payment_id, response.razorpay_signature);
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){
+            console.log('failed', {response})
+            var error = response.error;
+            updateOrderStatus(response.error.metadata.payment_id, '');
+            Swal.fire({
+                title: 'Payment failed',
+                icon: 'info',
+                html: error.reason + ' : <b>' + error.description + '</b>'
+            })	  });
+        rzp1.open();
+    }
+    document.getElementById('batch1-enroll').onclick = function(e){
+        e.preventDefault();
+        createOrder('{{wf {&quot;path&quot;:&quot;batch-1-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+    }
+
+    document.getElementById('batch1-enroll-modal').onclick = function(e){
+        e.preventDefault();
+        createOrder('{{wf {&quot;path&quot;:&quot;batch-1-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+    }
+
+    document.getElementById('batch2-enroll').onclick = function(e){
+        e.preventDefault();
+        createOrder('{{wf {&quot;path&quot;:&quot;batch-2-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+    }
+    document.getElementById('batch2-enroll-modal').onclick = function(e){
+        e.preventDefault();
+        createOrder('{{wf {&quot;path&quot;:&quot;batch-2-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+    }
+</script>
+<script>
+    var apiBaseUrl = 'http://localhost:4000/v1';
+    function updateOrderStatus (paymentId, paymentSignature) {
+        fetch(apiBaseUrl + '/orders/update/status', {
+            method: 'POST',
+            mode:'cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                razorpayPaymentId: paymentId,
+                razorpaySignature: paymentSignature,
+            })
+        })
+          .then(res => {
+              if (!res.ok) throw res;
+              return res;
+          })
+          .then(res => res.json())
+          .then(res => {
+              if (res.status === 'completed')
+                  Swal.fire({
+                      title: 'Slot booked for the bootcamp successfully',
+                      text: 'Payment Id for reference: ' + res.razorpayPaymentId,
+                      icon: 'success'
+                  });
+              else if (res.razorpayPaymentStatus === 'created')
+                  Swal.fire({
+                      title: 'Payment Attempted',
+                      text: 'Payment Id for reference: ' + res.razorpayPaymentId,
+                      icon: 'success'
+                  });
+          })
+          .catch( err => {
+              console.log({err})
+              err.text().then( errorMessage => {
+                  alert(errorMessage);
+                  Swal.fire({
+                      title: errorMessage,
+                      icon: 'info'
+                  })
+              })
+          })
+    }
+    function startOrderPayment (order_id, amount) {
+        var options = {
+            "key": "rzp_test_beCCJKLWl3Zg3o",
+            "amount": amount,
+            "currency": "INR",
+            "name": "Shape AI",
+            "description": "Test Transaction",
+            "order_id": order_id,
+            "handler": function (response) {
+                updateOrderStatus(response.razorpay_payment_id, response.razorpay_signature);
+            },
+            "theme": {
+                "color": "blue"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+        rzp1.on('payment.failed', function (response){
+            console.log('failed', {response})
+            updateOrderStatus(response.error.metadata.payment_id, '');
+            Swal.fire(response.error_description)
+        });
+        rzp1.open();
+    }
+    var productId = '6093f72b7c1bc7cda7a58b98';
+    document.getElementById('rzp-button1').onclick = function(e){
+        fetch(apiBaseUrl + '/orders' + '/' + productId, {
+            method: "POST"
+        })
+          .then(res => res.json())
+          .then(res => startOrderPayment(res.razorpayOrderId, res.amount));
+
+        Swal.fire({
+            title: 'Please complete the form',
+            html: `
+
+  <label>Full Name</label>
+    <input type="text" id="name" class="swal2-input" placeholder="Name">
+
+  <label>Gmail Id</label>
+  <input type="text" id="gmail" class="swal2-input" placeholder="you@gmail.com">
+
+  <label>Whatsapp Number (with country code)</label>
+  <div class="form-row">
+
+    <div class="form-group col-md-3">
+      <input type="text" class="swal2-input" id="country-code" value="+91" placeholder="+91">
+    </div>
+    <div class="form-group col-md-9">
+      <input type="text" maxlength="12" class="swal2-input" id="phone" placeholder="Number">
+    </div>
+
+  </div>
+    <label>Confirm Whatsapp Number</label>
+      <div class="form-row">
+
+    <div class="form-group col-md-3">
+      <input type="text" class="swal2-input" id="country-code-confirm" value="+91" placeholder="+91">
+    </div>
+    <div class="form-group col-md-9">
+      <input type="text" maxlength="12" class="swal2-input" id="phone-confirm" placeholder="Number">
+    </div>
+
+  </div>
+  `,
+            confirmButtonText: 'Continue',
+            focusConfirm: false,
+            preConfirm: () => {
+                const numberOnlyRegex = new RegExp(/^\d+$/);
+                const emailRegex = new RegExp(/^[\w.+\-]+@gmail\.com$/);
+                const name = Swal.getPopup().querySelector('#name').value;
+                const email = Swal.getPopup().querySelector('#gmail').value;
+
+                const countryCode = Swal.getPopup().querySelector('#country-code').value;
+                const countryCodeConfirm = Swal.getPopup().querySelector('#country-code-confirm').value;
+
+                const phone = Swal.getPopup().querySelector('#phone').value;
+                const phoneConfirm = Swal.getPopup().querySelector('#phone-confirm').value;
+
+
+                if (!name || !email || !countryCode || !countryCodeConfirm || !phone || !phoneConfirm) {
+                    Swal.showValidationMessage(`Please make sure all fields are filled`);
+                } else {
+                    if (!emailRegex.test(email)) Swal.showValidationMessage(`Please enter a valid Gmail address`);
+                    else if (!numberOnlyRegex.test(phone)) Swal.showValidationMessage(`Please enter a valid phone number`);
+                    else if (!numberOnlyRegex.test(phoneConfirm)) Swal.showValidationMessage(`Please enter a valid phone number`);
+                    else if (countryCode !== countryCodeConfirm) Swal.showValidationMessage('Please make sure the country code are matching')
+                    else if (phone !== phoneConfirm) Swal.showValidationMessage('Please make sure the phone numbers are matching');
+                    else {
+                        return {
+                            studentName: name,
+                            studentGmail: email,
+                            studentWhatsapp: countryCode + phone,
+                        }
+                    }
+                }
+            }
+        }).then((result) => {
+            console.log(result.value);
+        })
+        e.preventDefault();
+    }
+</script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</body>
+</html>
+
+// pay_H7nNr8ZV64kl9d
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/10.16.6/sweetalert2.min.js" integrity="sha512-CrNI25BFwyQ47q3MiZbfATg0ZoG6zuNh2ANn/WjyqvN4ShWfwPeoCOi9pjmX4DoNioMQ5gPcphKKF+oVz3UjRw==" crossorigin="anonymous"></script><script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var host = window.location.host;
+var env = host === "www.shapeai.tech" || host === "shapeai.tech" ? "prod" : "dev"
+console.log("{{wf {&quot;path&quot;:&quot;payment-link&quot;,&quot;type&quot;:&quot;Link&quot;\} }}", env);
+var url = new URL(window.location.href);
+var ref = url.searchParams.get("ref");
+
+
+  var apiBaseUrl = 'https://d263b6c091ab.ngrok.io/v1';
+
+  function createOrder(productId){
+  		e.preventDefault();
+			fetch(apiBaseUrl + '/orders' + '/' + productId , {
+				method: "POST",
+                mode:'cors',
+        headers: {
+			  'Content-Type': 'application/json'
+		  },
+        body: JSON.stringify({ refId: ref })
+            })
+				.then(res => res.json())
+				.then(res => startOrderPayment(res.razorpayOrderId, res.amount));
+		e.preventDefault();
+	}
+
+  function updateOrderStatus (paymentId, paymentSignature) {
+  	fetch(apiBaseUrl + '/orders/update/status', {
+  		method: 'POST',
+        mode:'cors',
+        headers: {
+			  'Content-Type': 'application/json'
+		  },
+  		body: JSON.stringify({
+				  razorpayPaymentId: paymentId,
+				  razorpaySignature: paymentSignature,
+			  })
+    })
+      .then(res => {
+      	if (!res.ok) throw res;
+      	return res;
+      })
+    .then(res => res.json())
+    .then(res => {
+    	if (res.status === 'completed')
+    		Swal.fire({
+              title: 'Slot booked for the bootcamp successfully',
+              html: 'Payment Id for reference: ' + res.razorpayPaymentId,
+              icon: 'success'
+    		});
+    	else if (res.razorpayPaymentStatus === 'created')
+			Swal.fire({
+				title: 'Payment Attempted',
+				text: 'Payment Id for reference: ' + res.razorpayPaymentId,
+				icon: 'success'
+			});
+    })
+      .catch( err => {
+	      console.log({err})
+		  err.text().then( errorMessage => {
+			  alert(errorMessage);
+			  Swal.fire({
+                title: errorMessage,
+                icon: 'info'
+              })
+		  })
+	  })
+  }
+  function startOrderPayment (order_id, amount) {
+	  var options = {
+		  "key": "rzp_test_beCCJKLWl3Zg3o",
+		  "amount": amount,
+		  "currency": "INR",
+		  "name": "Shape AI",
+		  "description": "{{wf {&quot;path&quot;:&quot;name&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}",
+		  "order_id": order_id,
+		  "handler": function (response) {
+					  updateOrderStatus(response.razorpay_payment_id, response.razorpay_signature);
+		  },
+		  "theme": {
+			  "color": "blue"
+		  }
+	  };
+	  var rzp1 = new Razorpay(options);
+	  rzp1.on('payment.failed', function (response){
+		  console.log('failed', {response})
+			  updateOrderStatus(response.error.metadata.payment_id, '');
+			  Swal.fire(response.error.description)
+	  });
+	  rzp1.open();
+  }
+	document.getElementById('batch1-enroll').onclick = function(e){
+  		e.preventDefault();
+      createOrder('{{wf {&quot;path&quot;:&quot;batch-1-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+	}
+
+  	document.getElementById('batch1-enroll-modal').onclick = function(e){
+  		e.preventDefault();
+      createOrder('{{wf {&quot;path&quot;:&quot;batch-1-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+	}
+
+  	document.getElementById('batch2-enroll').onclick = function(e){
+    		e.preventDefault();
+      createOrder('{{wf {&quot;path&quot;:&quot;batch-2-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+
+	}
+  	document.getElementById('batch2-enroll-modal').onclick = function(e){
+    		e.preventDefault();
+      createOrder('{{wf {&quot;path&quot;:&quot;batch-2-product-id&quot;,&quot;type&quot;:&quot;PlainText&quot;\} }}');
+
+	}
+</script>
+
+-->

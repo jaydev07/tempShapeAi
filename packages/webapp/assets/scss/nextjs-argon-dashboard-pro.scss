@@ -1,0 +1,180 @@
+/*!
+
+=========================================================
+* NextJS Argon Dashboard PRO - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/nextjs-argon-dashboard-pro
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+
+* Coded by www.creative-tim.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+
+// importing google fonts
+@import url("https://fonts.googleapis.com/css?family=Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+// Bootstrap RTL
+@import "bootstrap-rtl/bootstrap-rtl";
+
+// Bootstrap functions
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/mixins";
+
+// Argon functions
+@import "custom/functions";
+@import "custom/variables";
+@import "~bootstrap/scss/variables";
+
+// Argon mixins
+@import "custom/mixins";
+
+// Bootstrap components
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/dropdown";
+@import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/custom-forms";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/breadcrumb";
+@import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+@import "~bootstrap/scss/jumbotron";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/progress";
+@import "~bootstrap/scss/media";
+@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/tooltip";
+@import "~bootstrap/scss/popover";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/print";
+
+// Argon components
+@import "custom/components";
+@import "custom/utilities";
+@import "custom/vendors";
+
+// React differences
+@import "react/react-differences";
+
+// Custom styles
+@import "./styles/login.module.scss";
+@import "./styles/search.module.scss";
+@import "./courses/create.module.scss";
+@import "./courses/learningPage.module.scss";
+
+.truncate-4-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4 !important;
+  overflow: hidden;
+}
+
+.shadow-2lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.profile-img-custom-navbar {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-color: #fff !important;
+}
+
+.btn-toogle-contents {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.timeline:before {
+  border-right: 2px solid $primary;
+}
+
+.border-primary-5-left {
+  border-left: 5px solid $primary;
+}
+.border-success-5-left {
+  border-left: 5px solid $success;
+}
+.border-danger-5-left {
+  border-left: 5px solid $danger;
+}
+.border-default-5-left {
+  border-left: 5px solid $default;
+}
+.border-warning-5-left {
+  border-left: 5px solid $warning;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+.react-calendar-heatmap .color-empty {
+  fill: #eee;
+}
+.react-calendar-heatmap .color-scale-1 {
+  fill: #4e8be9;
+}
+.react-calendar-heatmap .color-scale-2 {
+  fill: #357ae6;
+}
+.react-calendar-heatmap .color-scale-3 {
+  fill: #1b6ae3;
+}
+.react-calendar-heatmap .color-scale-4 {
+  fill: #0259e0;
+}
+
+.img-hover-zoom {
+  overflow: hidden;
+  & > img:hover {
+    transform: scale(1.1);
+    transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .display-4 {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .display-4 {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  .timeline-one-side .timeline-content {
+    max-width: 100%;
+  }
+}

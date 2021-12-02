@@ -1,0 +1,49 @@
+.learning__page__sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 80%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 100px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  & > .card-body {
+    padding: 0;
+  }
+}
+
+.learning__page__sidebar__dark {
+  background-color: #212529;
+}
+
+.learning__page__sidebar__close {
+  width: 0 !important;
+
+  & > .card-body {
+    display: none;
+  }
+}
+.move__main__content {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  margin-left: 30%;
+}
+.markdown-content {
+  margin-top: 2rem;
+  & > .wmde-markdown > p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+}
+@media (min-width: 768px) {
+  .learning__page__sidebar {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .learning__page__sidebar {
+    width: 25%;
+  }
+}

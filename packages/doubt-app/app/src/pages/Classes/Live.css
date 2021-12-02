@@ -1,0 +1,36 @@
+#iframe-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 650px) {
+    #iframe-container {
+        height: 37%;
+    }
+    #chat-container {
+        height: 63%;
+
+    }
+}
+@media only screen and (min-width: 800px) {
+    #iframe-container {
+        height: 100%;
+    }
+    #chat-container {
+        height: 100%
+    }
+}
+
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (min-width: 600px) {*/
+/*    #iframe-container {*/
+/*        height: 50%;*/
+
+/*    }*/
+/*    #chat-container {*/
+/*        height: 50%;*/
+
+/*    }*/
+/*}*/

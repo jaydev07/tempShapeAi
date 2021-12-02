@@ -1,0 +1,23 @@
+.rc-md-editor {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.375rem;
+  margin-bottom: 2rem;
+  border: 0;
+}
+
+.rc-md-navigation {
+  background-color: #f7fafc;
+}
+.rc-md-navigation .button-wrap .button {
+  color: #203264;
+}
+
+.section-container {
+  color: #203264;
+}

@@ -1,0 +1,501 @@
+[
+  {
+    "_id": "60fa990eea2637e0dc8c7e68",
+    "statement": "<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fa9a50ea2637e0dc8d0902",
+    "statement": "First problem for testing",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fa9b52ea2637e0dc8d7855",
+    "statement": "qwertyuiopasdfghj",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fa9cb0ea2637e0dc8e0946",
+    "statement": "poiuytrewqlkjhgfds",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fab9e4ea2637e0dc9ae186",
+    "title": "Problem 1",
+    "statement": "Random problem statement",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fbc734ea2637e0dc006bfe",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fbe4a6ea2637e0dc0ad4ac",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9ae",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c0",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c1",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 3" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c2",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 3" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c3",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 3" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c4",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 3" }
+  },
+  {
+    "_id": "60fa990eea2637e0dc8c7e69",
+    "statement": "<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fa9a50ea2637e0dc8d0903",
+    "statement": "First problem for testing",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fa9b52ea2637e0dc8d7856",
+    "statement": "qwertyuiopasdfghj",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fa9c46ea2637e0dc8ddebe",
+    "statement": "Ramdom text",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fa9cb0ea2637e0dc8e0947",
+    "statement": "poiuytrewqlkjhgfds",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fab9e4ea2637e0dc9ae187",
+    "title": "Problem 1",
+    "statement": "Random problem statement",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fbc734ea2637e0dc006bff",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fbe4a6ea2637e0dc0ad4ad",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9af",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c5",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c6",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c7",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c8",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 5", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9c9",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 5", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 1" }
+  },
+
+  {
+    "_id": "60fa990eea2637e0dc8c7e70",
+    "statement": "<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fa9a50ea2637e0dc8d0904",
+    "statement": "First problem for testing",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fa9b52ea2637e0dc8d7857",
+    "statement": "qwertyuiopasdfghj",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fa9c46ea2637e0dc8ddebf",
+    "statement": "Ramdom text",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fa9cb0ea2637e0dc8e0948",
+    "statement": "poiuytrewqlkjhgfds",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fab9e4ea2637e0dc9ae188",
+    "title": "Problem 1",
+    "statement": "Random problem statement",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fbc734ea2637e0dc006bfg",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fbe4a6ea2637e0dc0ad4ae",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9ag",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9ca",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9cb",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9cc",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9cd",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9ce",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 2" }
+  },
+
+  {
+    "_id": "60fa990eea2637e0dc8c7e71",
+    "statement": "<strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fa9a50ea2637e0dc8d0905",
+    "statement": "First problem for testing",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fa9b52ea2637e0dc8d7858",
+    "statement": "qwertyuiopasdfghj",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fa9c46ea2637e0dc8ddebg",
+    "statement": "Ramdom text",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fa9cb0ea2637e0dc8e0949",
+    "statement": "poiuytrewqlkjhgfds",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fab9e4ea2637e0dc9ae189",
+    "title": "Problem 1",
+    "statement": "Random problem statement",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 1", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fbc734ea2637e0dc006bfh",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fbe4a6ea2637e0dc0ad4af",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9ah",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 2", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9cf",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9cg",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9ch",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 3", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9ci",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  },
+
+  {
+    "_id": "60fbe4b3ea2637e0dc0ad9cj",
+    "title": "Problem 1",
+    "statement": "shdh<br />eklv<br />kdkdk",
+    "shortDiscription":"Find the elements of a string that are described in the query",
+    "solutionLink": "https://www.youtube.com/watch?v=4wDVzjn9s9E",
+    "day": { "_id": "60fbb907ea2637e0dcfb4872", "name": "Day 4", "description": "Practice basics of Algebra coding and data structures"},
+    "week": { "_id": "60fbb907ea2637e0dcfb4877", "name": "Week 4" }
+  }
+]
+
